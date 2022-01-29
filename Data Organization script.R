@@ -13,15 +13,11 @@ library(cowplot)
 #Set cutoff of survival analysis in days
 survival_cutoff <-1825
 
+#set the working directory
 setwd("/Users/gavinturrell/Documents")
-#set the working directory for files to be saved and loaded from
-#setwd("/Users/gavinturrell/Tresors/Gavin's tresor/University of Queensland/Research/Dr Janin Chandra/R/TCGA-CESC R/Post Analysis Results")
-#setwd("C:/Users/Gavin Turrell/My Tresors/Gavin's tresor/University of Queensland/Research/Dr Janin Chandra/R/TCGA-CESC R/Post Analysis Results")
-#setwd("C:/Users/gavin/My Tresors/Gavin's tresor/University of Queensland/Research/Dr Janin Chandra/R/TCGA-CESC R/Post Analysis Results")
-#setwd("C:/Users/gavin/My Tresors/Gavin's tresor/University of Queensland/Research/Dr Janin Chandra/R/TCGA-CESC R")
-#setwd("//tri-dmf.int.tri.edu.au/data/uqdi/Immunology/Frazer Group/Gavin")
 
 #Open file prompt to select raw expression data file
+#Set the file name to the raw expression data file
 print("Select expression data file as CSV")
 raw_expression_data <- as.matrix(t(read.csv("TCGAOV.csv", header = FALSE)))
 #raw_expression_data <- as.matrix(read.csv("TCGAOV.csv", header = FALSE))
